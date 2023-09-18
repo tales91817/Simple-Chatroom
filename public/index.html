@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <img src="./assets/discussion-1.1s-200px.png" alt="logo" />
+          <h2>Simple Chatroom</h2>
+          <div class="form-input">
+            <label>Username</label>
+            <input type="text" id="username" />
+          </div>
+          <div class="form-input">
+            <button id="join-user">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="screen chat-screen">
+        <div class="header">
+          <div class="logo">Simple Chatroom</div>
+          <button id="exit-chat">Exit</button>
+        </div>
+        <div class="messages"></div>
+        <div class="typebox">
+          <input type="text" id="message-input" />
+          <button id="send-message">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
